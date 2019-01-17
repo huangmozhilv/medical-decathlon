@@ -21,12 +21,15 @@
 import psutil  # pip install psutil
 import os
 
-DATA_PATH = os.path.join("../../data/decathlon/144x144/")
-DATA_FILENAME = "Task01_BrainTumour.h5"
-OUT_PATH = os.path.join("./output/")
-INFERENCE_FILENAME="unet_model_for_decathlon.hdf5"
+print ("I am settings")
 
-EPOCHS = 30  # Number of epochs to train
+data_path = os.path.join("../data/decathlon/144x144/")
+data_filename = "Task01_BrainTumour.h5"
+
+output_path = os.path.join("./output/")
+inference_filename = "unet_model_for_decathlon.hdf5"
+
+epochs = 30  # Number of epochs to train
 
 """
 If the batch size is too small, then training is unstable.
