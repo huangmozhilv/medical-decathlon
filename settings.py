@@ -23,13 +23,18 @@ import os
 
 print ("I am settings")
 
-data_path = os.path.join("../data/decathlon/144x144/")
-data_filename = "Task01_BrainTumour.h5"
+#data_path = os.path.join("../data/decathlon/144x144/")
+DATA_PATH = os.path.join("../../data/decathlon/144x144/")
+#data_filename = "Task01_BrainTumour.h5"
+DATA_FILENAME = "../data/144x144/Task01_BrainTumour.h5"
 
-output_path = os.path.join("./output/")
-inference_filename = "unet_model_for_decathlon.hdf5"
+#output_path = os.path.join("./output/")
+#inference_filename = "unet_model_for_decathlon.hdf5"
+#epochs = 30  # Number of epochs to train
+OUT_PATH = os.path.join("./output/")
+INFERENCE_FILENAME = "unet_model_for_decathlon.hdf5"
 
-epochs = 30  # Number of epochs to train
+EPOCHS = 30  # Number of epochs to train
 
 """
 If the batch size is too small, then training is unstable.

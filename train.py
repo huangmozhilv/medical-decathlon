@@ -86,7 +86,7 @@ def train_and_predict(data_path, data_filename, batch_size, n_epoch):
 
     history = model.fit(imgs_train, msks_train,
                         batch_size=batch_size,
-                        epochs=n_epoch,
+                        epochs=n_epoch,steps_per_epoch=10,
                         validation_data=(imgs_validation, msks_validation),
                         verbose=1, shuffle="batch",
                         callbacks=model_callbacks)
